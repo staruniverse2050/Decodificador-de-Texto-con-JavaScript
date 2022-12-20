@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">    
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <img class="aluraIcon" src="./img/aluraicon.png">
+    <div class="textBox">
+        <main>
+            <form class="text" id="text">
+                <textarea class="textarea" onkeyup="this.value=undoaccents(this.value)" id="textarea" placeholder="Ingrese el texto aquí" required ></textarea>
+            </form>
+            <button id="encrypt">Encriptar!</button>
+            <button id="decrypt">Desencriptar!</button>
+            <p class="information">ⓘ Solo letras minusculas y sin acentos</p>
+        </main>
+    </div>
+    <div class="resultBox" id="box">
+        <img class="researcher"src="./img/Investigadora.png">
+        <p class="message1">Ningún mensaje fue encontrado</p>
+        <p class="message2">Ingrese el texto que desea encriptar o desencriptar</p>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
